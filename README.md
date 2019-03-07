@@ -4,7 +4,7 @@
 
 create a package.json
 ```
-npm init -y
+npm init -y //这里加-y就可以使用default setting创建package.json，否则要手动一项一项填写创建
 ```
 
 install express

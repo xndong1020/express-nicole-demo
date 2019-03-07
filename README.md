@@ -3,15 +3,19 @@
 ## step 01: init project
 
 create a package.json
+
+这里加-y就可以使用default setting创建package.json，否则要手动一项一项填写创建
 ```
-npm init -y //这里加-y就可以使用default setting创建package.json，否则要手动一项一项填写创建
+npm init -y 
 ```
 
 install express
 ```js
 npm i express
-//这里使用-D表示只在develope env里面有效。上production的时候可以不使用它；
-//nodemon是在你make changes的时候帮你自动刷新page
+```
+这里使用-D表示只在develope env里面有效。上production的时候可以不使用它；
+nodemon是在你make changes的时候帮你自动刷新page
+```
 npm i -D nodemon 
 ```
 
@@ -30,8 +34,8 @@ server.use(express.json())
 ```
 
 ## step 03: express listen on a port number for accepting incoming request
+### listen这条应该永远写在当前doc的最下面，ctrl+C从terminal退出这条命令
 ```js
-##listen这条应该永远写在当前doc的最下面，ctrl+C从terminal退出这条命令
 server.listen(3000, () => {
   console.log(`server is listening on port 3000`)
 })

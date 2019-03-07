@@ -10,7 +10,7 @@ npm init -y //这里加-y就可以使用default setting创建package.json，否�
 install express
 ```js
 npm i express
-npm i -D nodemon
+npm i -D nodemon //这里使用-D表示只在develope env里面有效。上production的时候可以不使用它；nodemon是在你make changes的时候帮你自动刷新page
 ```
 
 ## step 02: create our server file

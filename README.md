@@ -31,6 +31,7 @@ server.use(express.json())
 
 ## step 03: express listen on a port number for accepting incoming request
 ```js
+##listen这条应该永远写在当前doc的最下面，ctrl+C从terminal退出这条命令
 server.listen(3000, () => {
   console.log(`server is listening on port 3000`)
 })
